@@ -1,0 +1,37 @@
+{
+  "loginSuccessTest": [
+    {
+      "accountType": "standard"
+    },
+    {
+      "accountType": "visual"
+    },
+    {
+      "accountType": "problem"
+    },
+    {
+      "accountType": "performance"
+    },
+    {
+      "accountType": "error"
+    }
+  ],
+  "loginFailureTest": [
+    {
+      "accountType": "locked",
+      "error": "Sorry, this user has been locked out"
+    },
+    {
+      "accountType": "empty",
+      "error": "Username is required"
+    },
+    {
+      "accountType": "passwordEmpty",
+      "error": "Password is required"
+    },
+    {
+      "accountType": "invalid",
+      "error": "Username and password do not match any user"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "productOrderTest": [
+    {
+      "accountType": "standard",
+      "products": ["sauce-labs-backpack"],
+      "customerInfo": {
+        "firstName": "test",
+        "lastName": "test",
+        "zipCode": "19000"
+      }
+    },
+    {
+      "accountType": "visual",
+      "products": ["sauce-labs-bike-light", "sauce-labs-bolt-t-shirt"],
+      "customerInfo": {
+        "firstName": "test1",
+        "lastName": "test1",
+        "zipCode": "18000"
+      }
+    }
+  ]
+}

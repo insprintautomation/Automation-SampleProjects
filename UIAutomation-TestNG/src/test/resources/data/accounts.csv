@@ -1,0 +1,11 @@
+accountType,userName,password,environment
+standard,standard_user,secret_sauce,all
+visual,visual_user,secret_sauce,test
+locked,locked_out_user,secret_sauce,test
+problem,problem_user,secret_sauce,all
+performance,performance_glitch_user,secret_sauce,all
+error,error_user,secret_sauce,all
+empty,,,all
+passwordEmpty,xxx,,all
+invalid,aaaa,xxx,all
+

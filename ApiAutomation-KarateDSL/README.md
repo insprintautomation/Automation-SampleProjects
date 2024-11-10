@@ -1,8 +1,6 @@
 API Automation Karate DSL
 ===============
 
-.. contents::
-:local:
 
 Introduction
 ------------
@@ -20,55 +18,20 @@ Installation
 - **IDE** Intellij or others
 - 
 **Clone the Repository**
-git clone https://github.com/yourusername/test-automation.git
-cd test-automation
-Install Dependencies
-Make sure Maven is installed on your machine. Then, run the following command to install all the dependencies:
 
-bash
-Copy code
+`git clone https://github.com/insprintautomation/InSprintAutomation.git
+cd ApiAutomation-KarateDSL`
+
+**Install Dependencies**
+
+Make sure Maven is installed on your machine. Then, run the following command to install all the dependencies:
 `mvn install`
 
-If you already have Python_ with `pip <https://pip.pypa.io>`_ installed,
-you can simply run::
-
-    pip install robotframework
-
-For more detailed installation instructions, including installing Python, see
-`<INSTALL.rst>`__.
-
-Robot Framework requires Python 3.8 or newer and runs also on `PyPy <http://pypy.org>`_.
-The latest version that supports Python 3.6 and 3.7 is `Robot Framework 6.1.1`__.
-If you need to use Python 2, `Jython <http://jython.org>`_ or
-`IronPython <http://ironpython.net>`_, you can use `Robot Framework 4.1.3`__.
-
-__ https://github.com/robotframework/robotframework/tree/v6.1.1#readme
-__ https://github.com/robotframework/robotframework/tree/v4.1.3#readme
-
-Example
+Sample Tests
 -------
 
-Below is a simple example test case for testing login to some system.
-You can find more examples with links to related demo projects from
-http://robotframework.org.
+Below is a simple example test case for testing inventory endpoint in Petstore API.
 
-.. code:: robotframework
-
-    *** Settings ***
-    Documentation     A test suite with a single test for valid login.
-    ...
-    ...               This test has a workflow that is created using keywords in
-    ...               the imported resource file.
-    Resource          login.resource
-
-    *** Test Cases ***
-    Valid Login
-        Open Browser To Login Page
-        Input Username    demo
-        Input Password    mode
-        Submit Credentials
-        Welcome Page Should Be Open
-        [Teardown]    Close Browser
 
 Usage
 -----
