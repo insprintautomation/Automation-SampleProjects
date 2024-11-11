@@ -66,7 +66,7 @@ function fn() {
 }
 ```
 
-Create a Test runner class `PetstoreTest.java`.
+Create a `JUnit` Test runner class `PetstoreTest.java`.
 ```java
 package petstore;
 
@@ -199,19 +199,19 @@ Add build step in pom.xml to run tests using `maven-surefire-plugin`.
 Change to directory `ApiAutomation-KarateDSL`.
 
 To execute all tests, run maven command ``mvn clean test``.
-Using
 
 To filter specific group of tests and execute, run maven command ``mvn test -Dkarate.options="--tags @inventory"``.
-Using
 
 **Run/Debug configurations in IntelliJ:**
 
-Create run/debug configurations in IntelliJ using navigation `Run -> Edit Configurations -> Add New Configurations`
+Create run/debug configurations in IntelliJ using menu navigation `Run -> Edit Configurations -> Add New Configurations`
 
 Using `Maven` configuration, Select `Maven` from the run/debug configurations window. Name the configuration, enter command `clean test` in Run input box and Apply. 
+
 ![maven-runconfig.png](maven-runconfig.png)
 
 Using `JUnit` configuration, Select `JUnit` from the run/debug configurations window. Name the configuration, select `ApiAutomation-KarateDSL` module and `PetstoreTest.java` class and Apply.
+
 ![junit-runconfig.png](junit-runconfig.png)
 
 To Run/Debug configuration, select the saved configuration and click Play or Debug button.
@@ -220,10 +220,15 @@ Reports
 -------------
 After the test execution, Karate reports will be generated in `target\karate-reports` directory.
 Open `karate-summary.html` in browser.
+
 ![karate-summary-report.png](karate-summary-report.png)
+
 To see the tests and steps details for a feature, click on the feature file link.
+
 ![karate-feature-report.png](karate-feature-report.png)
+
 To see the logs, click on the steps having links.
+
 ![karate-log-report..png](karate-log-report.png)
 
 References
