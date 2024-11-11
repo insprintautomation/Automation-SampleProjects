@@ -21,12 +21,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.capture("report_feature",{distinct_id:"51a08747-47b4-4645-aba3-6b97268c4244",karate_version:"1.4.0",karate_meta:null});
+    posthog.capture("report_feature",{distinct_id:"6ad9438f-4a50-47f7-9668-1baa38ad9202",karate_version:"1.4.0",karate_meta:null});
   }
 });
 </script>
 
-    <title>petstore.features.Inventory</title>
+    <title>petstore.features.AddUser</title>
   </head>
   <body>
     <div id="root-container">
@@ -49,13 +49,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2024-11-10 01:00:04 PM</div>
+    <div>2024-11-10 07:46:50 PM</div>
   </div>
 </div>
 
         <div class="nav-container">
           <div class="nav-item passed">
-            <a href="#[1:6]"><span>[1:6]</span> <span>Get Inventory details</span></a>
+            <a href="#[1:9]"><span>[1:9]</span> <span>Add User successfully</span></a>
           </div>
         </div>
       </div>
@@ -64,47 +64,47 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
           <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
           <span class="feature-label">Feature:</span>
-          <span class="feature-path">petstore/features/Inventory.feature</span><span class="feature-label">|</span>
-          <span class="feature-name">Get Inventory</span>
+          <span class="feature-path">petstore/features/AddUser.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Add User</span>
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1:6]">
+          <div class="scenario-heading" id="[1:9]">
             <div class="heading-container">
               <div class="scenario-tags">
-                
+                <a class="badge badge-primary" href="karate-tags.html">story-test123</a><a class="badge badge-primary" href="karate-tags.html">regression</a><a class="badge badge-primary" href="karate-tags.html">addUser</a><a class="badge badge-primary" href="karate-tags.html">smoke</a><a class="badge badge-primary" href="karate-tags.html">in-sprint</a>
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1:6]</span>
-                <span class="scenario-name">Get Inventory details</span>
+                Scenario: <span>[1:9]</span>
+                <span class="scenario-name">Add User successfully</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>120</span>
+              <span>ms:</span>&nbsp;<span>637</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[1:6]bg">
+            <div class="step-container" id="[1:9]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[1:6]bg"><div>
+          <div data-parent="[1:9]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.4">
-      <div class="step-ref bg-step">4</div>
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url apiUrl</span>
+        <span>*</span>&nbsp;<span>def dataGenerator = Java.type(&#39;helpers.DataGenerator&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">10</div>
   </div>
 
    
@@ -113,18 +113,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">13:00:03.817 &lt;&lt; lock released, cached callSingle: classpath:helpers/Login.feature
+  <div class="preformatted" data-parent="0.5">19:46:49.707 &lt;&lt; lock released, cached callSingle: classpath:helpers/Login.feature
 </div>   
 
   <div>
         
     <div class="step-row">
-      <div class="step-container" id="0.4.0.call">
+      <div class="step-container" id="0.5.0.call">
         <div class="step-ref bg-step">&gt;&gt;</div>
         <div class="step-indent"></div>
         <div class="step-cell passed">helpers.Login</div>
       </div>
-      <div class="time-cell passed">723</div>
+      <div class="time-cell passed">1484</div>
     </div>
     <div>
       <div><div>
@@ -132,15 +132,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="0.4.0.call">
-    <div class="step-container" id="0.4.0.call.0.4">
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.4">
       <div class="step-ref bg-step">4</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>url apiUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -149,8 +149,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4.0.call.0.4">13:00:03.047 karate.env system property was: null 
-13:00:03.056 &gt;&gt; lock acquired, begin callSingle: classpath:helpers/Login.feature
+  <div class="preformatted" data-parent="0.5.0.call.0.4">19:46:48.109 karate.env system property was: null 
+19:46:48.122 &gt;&gt; lock acquired, begin callSingle: classpath:helpers/Login.feature
 </div>   
 
   
@@ -162,15 +162,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="0.4.0.call">
-    <div class="step-container" id="0.4.0.call.0.5">
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.5">
       <div class="step-ref bg-step">5</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>path &#39;v2/user/login&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -190,14 +190,42 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="0.4.0.call">
-    <div class="step-container" id="0.4.0.call.0.6">
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.6">
       <div class="step-ref bg-step">6</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>param username = &#39;aldo.volkman&#39;</span>
       </div>
     </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param password = &#39;h%3Dy9hOEV&#39;</span>
+      </div>
+    </div>
     <div class="time-cell passed">1</div>
   </div>
 
@@ -218,43 +246,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="0.4.0.call">
-    <div class="step-container" id="0.4.0.call.0.7">
-      <div class="step-ref bg-step">7</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>param password = &#39;h%3Dy9hOEV&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.4.0.call">
-    <div class="step-container" id="0.4.0.call.0.8">
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.8">
       <div class="step-ref bg-step">8</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method Get</span>
       </div>
     </div>
-    <div class="time-cell passed">669</div>
+    <div class="time-cell passed">1370</div>
   </div>
 
    
@@ -263,27 +263,29 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4.0.call.0.8">13:00:03.311 request:
+  <div class="preformatted" data-parent="0.5.0.call.0.8">19:46:48.714 request:
 1 &gt; GET https://petstore.swagger.io/v2/user/login?password=h%253Dy9hOEV&amp;username=aldo.volkman
 1 &gt; Host: petstore.swagger.io
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.1)
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-13:00:03.729 response time in milliseconds: 411
+19:46:49.558 response time in milliseconds: 838
 1 &lt; 200
-1 &lt; Date: Sun, 10 Nov 2024 18:00:03 GMT
+1 &lt; Date: Mon, 11 Nov 2024 00:46:49 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Connection: keep-alive
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-1 &lt; X-Expires-After: Sun Nov 10 19:00:03 UTC 2024
+1 &lt; X-Expires-After: Mon Nov 11 01:46:49 UTC 2024
 1 &lt; X-Rate-Limit: 5000
 1 &lt; Server: Jetty(9.2.9.v20150224)
-{&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;logged in user session:1731261603697&quot;}
+1 &lt; Expires: 0
+1 &lt; Cache-Control: no-cache
+1 &lt; Connection: keep-alive
+{&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;logged in user session:1731286009606&quot;}
 
 </div>   
 
@@ -296,15 +298,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="0.4.0.call">
-    <div class="step-container" id="0.4.0.call.0.9">
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.9">
       <div class="step-ref bg-step">9</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">15</div>
   </div>
 
    
@@ -324,15 +326,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="0.4.0.call">
-    <div class="step-container" id="0.4.0.call.0.10">
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.10">
       <div class="step-ref bg-step">10</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def sessionId = response.message.split(&quot;:&quot;)[1]</span>
       </div>
     </div>
-    <div class="time-cell passed">39</div>
+    <div class="time-cell passed">70</div>
   </div>
 
    
@@ -352,15 +354,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="0.4.0.call">
-    <div class="step-container" id="0.4.0.call.0.11">
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.11">
       <div class="step-ref bg-step">11</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>print &quot;session id: &quot; + sessionId</span>
       </div>
     </div>
-    <div class="time-cell passed">13</div>
+    <div class="time-cell passed">11</div>
   </div>
 
    
@@ -369,7 +371,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4.0.call.0.11">13:00:03.816 [print] session id: 1731261603697 
+  <div class="preformatted" data-parent="0.5.0.call.0.11">19:46:49.703 [print] session id: 1731286009606 
 </div>   
 
   
@@ -381,96 +383,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div><div>
+          <div data-parent="[1:9]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.7">
-      <div class="step-ref passed">7</div>
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;v2/store/inventory&#39;</span>
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.8">
-      <div class="step-ref passed">8</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method Get</span>
-      </div>
-    </div>
-    <div class="time-cell passed">111</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.8">13:00:03.821 request:
-1 &gt; GET https://petstore.swagger.io/v2/store/inventory
-1 &gt; Host: petstore.swagger.io
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.1)
-1 &gt; Accept-Encoding: gzip,deflate
-
-
-13:00:03.930 response time in milliseconds: 108
-1 &lt; 200
-1 &lt; Date: Sun, 10 Nov 2024 18:00:03 GMT
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Connection: keep-alive
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-1 &lt; Server: Jetty(9.2.9.v20150224)
-{&quot;sold&quot;:37,&quot;placed&quot;:1,&quot;5000&quot;:1,&quot;string&quot;:512,&quot;availabe&quot;:1,&quot;pending&quot;:33,&quot;father&quot;:1,&quot;available&quot;:33,&quot;Error&quot;:30,&quot;awailable&quot;:1,&quot;3000&quot;:1,&quot;soldout&quot;:1,&quot;solt&quot;:2,&quot;SOLD&quot;:1,&quot;Sold&quot;:10,&quot;availablee&quot;:1,&quot;Is abstract&quot;:2,&quot;null&quot;:1,&quot;Out Of Stock&quot;:10,&quot;not available&quot;:1,&quot;xyz&quot;:3,&quot;Available&quot;:11,&quot;Pending&quot;:1}
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.9">
-      <div class="step-ref passed">9</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -495,10 +421,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">10</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>assert response.sold &gt;= 1</span>
+        <span>Given</span>&nbsp;<span>path &#39;v2/user&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">7</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -523,10 +449,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">11</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>assert response.pending &gt;= 0</span>
+        <span>*</span>&nbsp;<span>def requestJson = dataGenerator.getUserRequestJson()</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">327</div>
   </div>
 
    
@@ -551,10 +477,146 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">12</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>assert response.available &gt;= 0</span>
+        <span>And</span>&nbsp;<span>request requestJson</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">250</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">19:46:50.129 request:
+1 &gt; POST https://petstore.swagger.io/v2/user
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 171
+1 &gt; Host: petstore.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;firstName&quot;:&quot;Doug&quot;,&quot;lastName&quot;:&quot;Gislason&quot;,&quot;password&quot;:&quot;T@BS!H9*&quot;,&quot;userStatus&quot;:0,&quot;phone&quot;:&quot;019-167-3778&quot;,&quot;id&quot;:976,&quot;email&quot;:&quot;rebeca.schaden@gmail.com&quot;,&quot;username&quot;:&quot;genaro.rice&quot;}
+
+19:46:50.316 response time in milliseconds: 186
+1 &lt; 200
+1 &lt; Date: Mon, 11 Nov 2024 00:46:50 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Expires: 0
+1 &lt; Cache-Control: no-cache
+1 &lt; Connection: keep-alive
+{&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;976&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.code == 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">36</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == {&quot;code&quot;:200,&quot;type&quot;:&quot;#string&quot;,&quot;message&quot;:&#39;#string&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
   </div>
 
    

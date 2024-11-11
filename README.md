@@ -1,6 +1,9 @@
 API Automation Karate DSL
 ===============
 
+Introduction
+------------
+
 This is a sample test automation project for automating in-sprint/functional/regression tests for the Sample **PetStore** API Application. The tests are built using **JAVA**, **Karate DSL**, and **Maven**.
 
 **Karate DSL** is a popular open-source framework for API testing that is built on top of **Cucumber**. It allows you to write tests in a simple, readable domain-specific language (DSL) with minimal setup. Karate integrates both API testing and UI testing in one framework, offering powerful features like performance testing, mocking, and data-driven testing.
@@ -15,10 +18,8 @@ Installation
 
 **Clone the Repository**
 
-```commandline
-git clone https://github.com/insprintautomation/Automation-SampleProjects.git
-cd Automation-SampleProjects/ApiAutomation-KarateDSL
-```
+`git clone https://github.com/insprintautomation/Automation-SampleProjects.git
+cd Automation-SampleProjects/ApiAutomation-KarateDSL`
 
 **Install Dependencies**
 
@@ -71,7 +72,7 @@ Below is simple test scripts for testing inventory and user endpoint in Petstore
 
 **Inventory:** Performs a GET request on endpoint v2/store/inventory and validates response.
 ```gherkin
-@smoke @regression @inventory
+@smoke @regression
 Feature: Get Inventory
 
   Background: Define URL
@@ -172,37 +173,8 @@ Add build step in pom.xml to run tests using maven-surefire-plugin.
         </plugins>
 </build>
 ```
-**CommandLine:** 
+**Using CommandLine:** Run maven command ``mvn clean test`` from the module ApiAutomation-KarateDSL.
 
-Change to directory `ApiAutomation-KarateDSL`.
-
-To execute all tests, run maven command ``mvn clean test``.
-Using
-
-To filter specific group of tests and execute, run maven command ``mvn test -Dkarate.options="--tags @inventory"``.
-Using
-
-**Run/Debug configurations in IntelliJ:**
-
-Create run/debug configurations in IntelliJ using navigation Run -> Edit Configurations -> Add New Configurations
-
-Using `Maven` configuration, Select `Maven` from the run/debug configurations window. Name the configuration, enter command `clean test` in Run input box and Apply. 
-![maven-runconfig.png](maven-runconfig.png)
-
-Using `JUnit` configuration, Select `JUnit` from the run/debug configurations window. Name the configuration, select `ApiAutomation-KarateDSL` module and `PetstoreTest.java` class and Apply.
-![junit-runconfig.png](junit-runconfig.png)
-
-To Run/Debug configuration, select the saved configuration and click Play or Debug button.
-
-Reports
--------------
-After the test execution, Karate reports will be generated in `target\karate-reports` directory.
-Open `karate-summary.html` in browser.
-![karate-summary-report.png](karate-summary-report.png)
-To see the tests and steps details for a feature, click on the feature file link.
-![karate-feature-report.png](karate-feature-report.png)
-To see the logs, click on the steps having links.
-![karate-log-report..png](karate-log-report.png)
 
 References
 -------------
@@ -210,3 +182,41 @@ References
 - Karate Labs WebSite: https://www.karatelabs.io
 - Karate Labs Github: https://github.com/karatelabs/karate
 - Petstore API Swagger: https://petstore.swagger.io
+
+Support and Contact
+-------------------
+
+- `Slack <http://slack.robotframework.org/>`_
+- `Forum <https://forum.robotframework.org/>`_
+- `robotframework-users
+  <https://groups.google.com/group/robotframework-users/>`_ mailing list
+
+Contributing
+------------
+
+Interested to contribute to Robot Framework? Great! In that case it is a good
+start by looking at the `<CONTRIBUTING.rst>`__. If you
+do not already have an issue you would like to work on, you can check
+issues with `good new issue`__ and `help wanted`__ labels.
+
+Remember also that there are many other tools and libraries in the wider
+`Robot Framework ecosystem <http://robotframework.org>`_ that you can
+contribute to!
+
+__ https://github.com/robotframework/robotframework/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22
+__ https://github.com/robotframework/robotframework/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22
+
+License and Trademark
+---------------------
+
+Robot Framework is open source software provided under the `Apache License 2.0`__.
+Robot Framework documentation and other similar content use the
+`Creative Commons Attribution 3.0 Unported`__ license. Most libraries and tools
+in the ecosystem are also open source, but they may use different licenses.
+
+Robot Framework trademark is owned by `Robot Framework Foundation`_.
+
+__ http://apache.org/licenses/LICENSE-2.0
+__ http://creativecommons.org/licenses/by/3.0
+
+.. |r| unicode:: U+00AE

@@ -1,10 +1,11 @@
+@smoke @regression @addUser
 Feature: Add User
 
   Background: Define URL
     * def dataGenerator = Java.type('helpers.DataGenerator')
     Given url apiUrl
 
-    @addUser
+    @story-test123 @in-sprint
   Scenario: Add User successfully
     Given path 'v2/user'
     * def requestJson = dataGenerator.getUserRequestJson()
