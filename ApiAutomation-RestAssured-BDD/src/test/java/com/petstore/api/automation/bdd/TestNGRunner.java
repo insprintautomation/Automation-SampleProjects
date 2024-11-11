@@ -1,4 +1,4 @@
-package com.petstore.api.automation.runner;
+package com.petstore.api.automation.bdd;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;

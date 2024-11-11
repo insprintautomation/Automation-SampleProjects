@@ -266,6 +266,19 @@ public class ApiUtil {
      * Extracting JSON Response with Rest Assured. To parse a JSON body, we shall use the JSONPath class and utilize the methods of this class
      * to obtain the value of a specific attribute
      *
+     * @param jsonPath JSONPath value
+     * @param expected expected value
+     * @throws  JsonPathException Json Path exception
+     */
+    public void verifyResponseBody(String jsonPath, String expected) throws JsonPathException {
+        Object actual = getJsonPathValue(jsonPath);
+        assertValue(actual, expected, "Response body assertion for jsonpath '%s':".formatted(jsonPath));
+    }
+
+    /**
+     * Extracting JSON Response with Rest Assured. To parse a JSON body, we shall use the JSONPath class and utilize the methods of this class
+     * to obtain the value of a specific attribute
+     *
      * @param data JSONPath value
      *             {@link JsonPathException}
      */

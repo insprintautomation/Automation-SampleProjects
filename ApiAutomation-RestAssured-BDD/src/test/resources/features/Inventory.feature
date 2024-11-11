@@ -1,9 +1,10 @@
-@smoke
+@smoke @inventory
 Feature: Get Inventory
 
   Background: Define URL
     Given I set baseurl for inventory service
 
+  @in-sprint @story-test123
   Scenario: Get Inventory details
     When I submit GET request
     Then I see response status 200

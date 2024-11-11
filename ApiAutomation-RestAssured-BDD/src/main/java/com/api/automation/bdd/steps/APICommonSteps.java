@@ -1,4 +1,4 @@
-package com.api.automation.steps;
+package com.api.automation.bdd.steps;
 
 import com.api.automation.utils.LogUtil;
 import com.api.automation.utils.ApiUtil;
@@ -67,10 +67,7 @@ public class APICommonSteps {
     @Then("I see response matches for fields")
     public void verifyResponseBody(DataTable data) {
         LogUtil.logStep("Then I see matches for fields %s".formatted(data));
-        Map<String, String> responseValidation = Objects.isNull(data)
-                ? new HashMap<>()
-                : new HashMap<>(data.asMap());
-        apiUtil.verifyResponseBody(responseValidation);
+        apiUtil.verifyResponseBody(data.asMap());
     }
 
     @Then("I see response header value matches for headers")

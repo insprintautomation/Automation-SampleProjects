@@ -1,0 +1,58 @@
+INFO : 
+Given I set baseurl for user service
+---
+INFO INFO : -------------- Creating Request -------------------INFO INFO : API Request URL: https://petstore.swagger.io/v2/INFO : 
+Given I set request JSON from getUserRequestJsINFO : INFO : 
+Given I set request JSON string 
+ {"firstName":"Kevin","lastName":"Toy","password":"IBj9#yM1","userStatus":0,"phone":"(749) 400-9405","id":208029,"email":"nadine.bins@gmail.com","username":"bobette.marquardt"}
+---
+INFO : Adding request JSON: {"firstName":"Kevin","lastName":"Toy","password":"IBj9#yM1","userStatus":0,"phone":"(749) 400INFO : -------------- Response -----------------------
+INFO : {
+    "sold": 17,
+    "Sold": 12,
+    "string": 488,
+    "Out Of Stock": 12,
+    "pending": 11,
+    "available": 119,
+    "xyz": 2,
+    "not available": 1,
+    "Error": 35,
+    "Available": 12
+}
+INFO : Response Time: 198 ms
+INFO : 
+Then I see response status 200
+---
+INFO : -------------- Response Validation -----------------------
+INFO : Response status assertion: Actual = 200; Expected = 200
+INFO : 
+Then I see matches for fields | sold      | [>=]1 |
+| pending   | [>=]0 |
+| available | [>=]0 |
+
+---
+INFO : Getting value of JSON path: sold 
+INFO : Value for jsonpath: 'sold' is: '17'
+INFO : Response body assertion for jsonpath 'sold':
+INFO : Getting value of JSON path: pending 
+INFO : Value for jsonpath: 'pending' is: '11'
+INFO : Response body assertion for jsonpath 'pending':
+INFO : Getting value of JSON path: available 
+INFO : Value for jsonpath: 'available' is: '119'
+INFO : Response body assertion for jsonpath 'available':
+on: Actual = 200; Expected = 200
+INFO : 
+Then I see matches for fields | code    | 200      |
+| type    | [string] |
+| message | [string] |
+
+---
+INFO : Getting value of JSON path: code 
+INFO : Value for jsonpath: 'code' is: '200'
+INFO : Response body assertion for jsonpath 'code':
+INFO : Getting value of JSON path: type 
+INFO : Value for jsonpath: 'type' is: 'unknown'
+INFO : Response body assertion for jsonpath 'type':
+INFO : Getting value of JSON path: message 
+INFO : Value for jsonpath: 'message' is: '208029'
+INFO : Response body assertion for jsonpath 'message':
