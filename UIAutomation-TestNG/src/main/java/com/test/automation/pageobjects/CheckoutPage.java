@@ -6,6 +6,8 @@ import com.test.automation.utils.dataprovider.model.CustomerInfo;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
+import static org.testng.Assert.assertEquals;
+
 public class CheckoutPage extends WebUtil {
 
     private final By firstName = By.id("first-name");

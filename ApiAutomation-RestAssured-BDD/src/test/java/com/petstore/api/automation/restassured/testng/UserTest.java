@@ -12,7 +12,7 @@ import static org.hamcrest.Matchers.empty;
 public class UserTest extends BaseSetup {
 
     //  Using RestAssured directly
-    @Test
+    @Test(groups = {"user", "in-sprint"})
     public void userTest() {
         String requestBody = DataGenerator.getUserRequestJson();
         String baseUri = PropertiesUtil.getProperty("prod.api.url");

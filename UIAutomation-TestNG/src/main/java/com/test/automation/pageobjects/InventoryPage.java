@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
+import static org.testng.Assert.assertEquals;
+
 public class InventoryPage extends WebUtil {
 
     private By title = By.cssSelector(".title");

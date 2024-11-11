@@ -8,7 +8,7 @@ import static io.restassured.http.Method.GET;
 public class InventoryTest extends BaseSetup {
 
     //  Using ApiUtil wrapper methods which uses RestAssured
-    @Test
+    @Test(groups = {"inventory", "smoke"})
     public void inventoryTest() {
         ApiUtil apiUtil = new ApiUtil();
         apiUtil.setBaseUrl("inventory");
