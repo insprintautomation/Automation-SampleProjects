@@ -5,6 +5,28 @@ This is a sample test automation project for automating in-sprint/functional/reg
 
 **Karate DSL** is a popular open-source framework for API testing that is built on top of **Cucumber**. It allows you to write tests in a simple, readable domain-specific language (DSL) with minimal setup. Karate integrates both API testing and UI testing in one framework, offering powerful features like performance testing, mocking, and data-driven testing.
 
+Project Structure
+------------
+```
+ApiAutomation-KarateDSL
+        | pom.xml
+        ├── src
+        │    └── test
+        │        └── java
+        │            ├── helpers
+        │            │   ├── DataGenerator.java
+        │            │   └── Login.feature
+        │            ├── petstore
+        │            │   ├── PetstoreTest.java
+        │            │   └── features
+        │            │       ├── AddUser.feature
+        │            │       └── Inventory.feature
+        │            ├── logback-test.xml
+        │            └── karate-config.js
+        └── README.md
+```
+
+
 Installation
 ------------
 **Prerequisites**
@@ -22,12 +44,12 @@ cd Automation-SampleProjects/ApiAutomation-KarateDSL
 
 **Install Dependencies**
 
-Make sure Maven is installed on your machine. Then, run the following command to install all the dependencies:
+Make sure `Maven` is installed on your machine. Then, run the following command to install all the dependencies:
 `mvn clean install -DskipTests`
 
 Karate Configuration
 -----
-Create a karate-config.js file and configure the environment, API baseurl and base steps.
+Create a `karate-config.js` file and configure the environment, API baseurl and base steps.
 ```javascript
 function fn() {
   var env = karate.env; // get system property 'karate.env'
@@ -44,7 +66,7 @@ function fn() {
 }
 ```
 
-Create a Test runner class PetstoreTest.
+Create a Test runner class `PetstoreTest.java`.
 ```java
 package petstore;
 
@@ -67,9 +89,9 @@ public class PetstoreTest {
 Sample Tests
 -------
 
-Below is simple test scripts for testing inventory and user endpoint in Petstore API. Refer Karate documentation for the step's usage.
+Below is simple test scripts for testing inventory and user endpoints in Petstore API. Refer Karate documentation for the step's usage.
 
-**Inventory:** Performs a GET request on endpoint v2/store/inventory and validates response.
+**Inventory:** Performs a GET request on endpoint `v2/store/inventory` and validates response.
 ```gherkin
 @smoke @regression @inventory
 Feature: Get Inventory
@@ -87,7 +109,7 @@ Feature: Get Inventory
     And assert response.available >= 0
 ```
 
-**User:** Performs a POST request on endpoint v2/user and validates response. Uses a custom DataGenerators JAVA class to get test data using Faker and generates request body.
+**User:** Performs a POST request on endpoint `v2/user` and validates response. Uses a custom DataGenerators JAVA class to get test data using Faker and generates request body.
 ```gherkin
 @smoke @regression @addUser
 Feature: Add User
@@ -109,7 +131,7 @@ Feature: Add User
 
 Data Generator
 -----
-DataGenerator.java uses Faker library to get random test data required to construct the request JSON for User account creation.
+`DataGenerator.java` uses Faker library to get random test data required to construct the request JSON for User account creation.
 ```java
 package helpers;
 
@@ -149,7 +171,7 @@ public class DataGenerator {
 
 Running Tests
 -----
-Add build step in pom.xml to run tests using maven-surefire-plugin.
+Add build step in pom.xml to run tests using `maven-surefire-plugin`.
 ```xml
 <build>
         <testResources>
@@ -184,7 +206,7 @@ Using
 
 **Run/Debug configurations in IntelliJ:**
 
-Create run/debug configurations in IntelliJ using navigation Run -> Edit Configurations -> Add New Configurations
+Create run/debug configurations in IntelliJ using navigation `Run -> Edit Configurations -> Add New Configurations`
 
 Using `Maven` configuration, Select `Maven` from the run/debug configurations window. Name the configuration, enter command `clean test` in Run input box and Apply. 
 ![maven-runconfig.png](maven-runconfig.png)
