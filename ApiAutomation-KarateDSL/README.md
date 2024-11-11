@@ -208,11 +208,11 @@ Create run/debug configurations in IntelliJ using menu navigation `Run -> Edit C
 
 Using `Maven` configuration, Select `Maven` from the run/debug configurations window. Name the configuration, enter command `clean test` in Run input box and Apply. 
 
-![maven-runconfig.png](maven-runconfig.png)
+![maven-runconfig.png](images/maven-runconfig.png)
 
 Using `JUnit` configuration, Select `JUnit` from the run/debug configurations window. Name the configuration, select `ApiAutomation-KarateDSL` module and `PetstoreTest.java` class and Apply.
 
-![junit-runconfig.png](junit-runconfig.png)
+![junit-runconfig.png](images/junit-runconfig.png)
 
 To Run/Debug configuration, select the saved configuration and click Play or Debug button.
 
@@ -221,15 +221,15 @@ Reports
 After the test execution, Karate reports will be generated in `target\karate-reports` directory.
 Open `karate-summary.html` in browser.
 
-![karate-summary-report.png](karate-summary-report.png)
+![karate-summary-report.png](images/karate-summary-report.png)
 
 To see the tests and steps details for a feature, click on the feature file link.
 
-![karate-feature-report.png](karate-feature-report.png)
+![karate-feature-report.png](images/karate-feature-report.png)
 
 To see the logs, click on the steps having links.
 
-![karate-log-report..png](karate-log-report.png)
+![karate-log-report..png](images/karate-log-report.png)
 
 References
 -------------
