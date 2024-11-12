@@ -483,6 +483,7 @@ Using `TestNG` configuration, Select `TestNG` from the run/debug configurations 
 To Run/Debug configuration, select the saved configuration and click Play or Debug button.
 
 **Run Console Output:**
+
 ![bdd-run-output.png](images/bdd-run-output.png)
 
 Running TestNG Tests
@@ -547,6 +548,7 @@ Using `TestNG` configuration, Select `TestNG` from the run/debug configurations 
 To Run/Debug configuration, select the saved configuration and click Play or Debug button.
 
 **Run Console Output:**
+
 ![testng-run-output.png](images/testng-run-output.png)
 
 Reports
@@ -579,6 +581,7 @@ Open `reports/extent/index.html` in browser.
 ![extent-tests.png](images/extent-tests.png)
 
 **Logs:**
+
 ![logs.png](images/logs.png)
 
 References

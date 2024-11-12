@@ -9,10 +9,10 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>ApiAutomation-KarateDSL</module>
+        <module>ApiAutomation-BDD-KarateDSL</module>
         <module>ApiAutomation-RestAssured-BDD</module>
-        <module>UIAutomation-CucumberBDD</module>
-        <module>UIAutomation-TestNG</module>
+        <module>WebAutomation-BDD</module>
+        <module>WebAutomation-TDD</module>
     </modules>
 
     <properties>
