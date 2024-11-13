@@ -1,7 +1,8 @@
-API Automation Karate DSL
+API Automation Karate DSL BDD
 ===============
 
-This is a sample test automation project for automating in-sprint/functional/regression tests for the Sample **PetStore** API Application. The tests are built using **JAVA**, **Karate DSL**, **JUnit** and **Maven**.
+This test automation project for automating in-sprint/functional/regression tests for the **PetStore** API Application using BDD (Behavioural Driven Development). 
+The tests are built using **Gherkin**, **JAVA**, **Karate DSL**, **JUnit** and **Maven**.
 
 **Karate DSL** is a popular open-source framework for API testing that is built on top of **Cucumber**. It allows you to write tests in a simple, readable domain-specific language (DSL) with minimal setup. Karate integrates both API testing and UI testing in one framework, offering powerful features like performance testing, mocking, and data-driven testing.
 
@@ -38,7 +39,7 @@ Installation
 **Clone the Repository**
 
 ```commandline
-git clone https://github.com/insprintautomation/Automation-SampleProjects.git
+git clone https://github.com/insprintautomation/TestAutomationProjects.git
 cd Automation-SampleProjects/ApiAutomation-KarateDSL
 ```
 
@@ -86,12 +87,12 @@ public class PetstoreTest {
 }
 ```
 
-Sample Tests
+BDD Tests
 -------
 
-Below is simple test scripts for testing inventory and user endpoints in Petstore API. Refer Karate documentation for the step's usage.
+Below is the test scripts for testing inventory and user feature/endpoints in Petstore API. Refer Karate documentation for the step's usage.
 
-**Inventory:** Performs a GET request on endpoint `v2/store/inventory` and validates response.
+**Inventory.feature:** Performs a GET request on endpoint `v2/store/inventory` and validates the response.
 ```gherkin
 @smoke @regression @inventory
 Feature: Get Inventory
@@ -109,7 +110,7 @@ Feature: Get Inventory
     And assert response.available >= 0
 ```
 
-**User:** Performs a POST request on endpoint `v2/user` and validates response. Uses a custom DataGenerators JAVA class to get test data using Faker and generates request body.
+**User.feature:** Performs a POST request on endpoint `v2/user` and validates the response. Uses a custom DataGenerators JAVA class to get test data using Faker and generates request body.
 ```gherkin
 @smoke @regression @addUser
 Feature: Add User

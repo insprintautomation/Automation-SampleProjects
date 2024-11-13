@@ -2,7 +2,7 @@ Web Automation Cucumber BDD
 ===============
 
 This test automation project is for automating in-sprint/functional/regression tests for the **saucedemo** Web Application using **Behavioural Driven Development(BDD)** framework. 
-The tests are built using **JAVA**, **Selenium WebDriver 4**, **Cucumber BDD**, **TestNG** and **Maven**.
+The tests are built using **Gherkin**, **JAVA**, **Selenium WebDriver 4**, **Cucumber BDD**, **TestNG** and **Maven**.
 Framework uses **Page Object Model(POM)** using Page Factory.
 
 Project Structure
@@ -568,11 +568,11 @@ To run `Cucumber BDD` tests using parallel threads, run maven command ``mvn clea
 
 Create run/debug configurations in IntelliJ using menu navigation `Run -> Edit Configurations -> Add New Configurations`
 
-Using `Maven` configuration, Select `Maven` from the run/debug configurations window. Name the configuration, enter command `clean test -Dcucumber.filter.tags="@order" -Denvironment=test` in Run input box, select `ApiAutomation-RestAssured-BDD` module and Apply. 
+Using `Maven` configuration, Select `Maven` from the run/debug configurations window. Name the configuration, enter command `clean test -Dcucumber.filter.tags="@order" -Denvironment=test` in Run input box, select `WebAutomation-BDD` module and Apply. 
 
 ![web-bdd-mvn.png](images/web-bdd-mvn.png)
 
-Using `TestNG` configuration, Select `TestNG` from the run/debug configurations window. Name the configuration, select `ApiAutomation-RestAssured-BDD` module and `TestNGRunner.java` class and Apply.
+Using `TestNG` configuration, Select `TestNG` from the run/debug configurations window. Name the configuration, select `WebAutomation-BDD` module and `TestNGRunner.java` class and Apply.
 
 ![web-bdd-testng.png](images/web-bdd-testng.png)
 
@@ -627,5 +627,5 @@ References
 
 - Selenium WebDriver: https://www.selenium.dev/documentation/webdriver
 - Selenium Grid: https://www.selenium.dev/documentation/grid
-- Cucumber Github: https://cucumber.io/docs/cucumber
+- Cucumber: https://cucumber.io/docs/cucumber
 - Saucedemo Web Application: https://www.saucedemo.com

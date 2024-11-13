@@ -1,17 +1,17 @@
 Test Automation Sample Projects
 ===============
 
-This repository has sample test automation projects for automating in-sprint/functional/regression tests for the Web and API Application. 
+This repository has test automation projects for automating in-sprint/functional/regression tests for the Web and API Application using BDD(Behavioral Driven Development) and TDD(Test Driven Development). 
 
-The tests are built using different technologies such as **JAVA**, **Cucumber BDD**, **TestNG**, **Karate DSL**, **Selenium WebDriver 4**, **RestAssured** and **Maven**.
+The tests are built using different technologies such as **Gherkin**, **JAVA**, **Cucumber BDD**, **TestNG**, **Karate DSL**, **Selenium WebDriver 4**, **RestAssured** and **Maven**.
 
-Sample Test Automation Projects
+Test Automation Projects
 ------------
 
 - [ApiAutomation-KarateDSL](./ApiAutomation-KarateDSL/README.md)
 - [ApiAutomation-RestAssured-BDD](./ApiAutomation-RestAssured-BDD/README.md)
-- [WebAutomation-CucumberBDD](./WebAutomation-CucumberBDD/README.md)
-- [WebAutomation-TestNG](./WebAutomation-TestNG/README.md)
+- [WebAutomation-BDD](./WebAutomation-BDD/README.md)
+- [WebAutomation-TDD](./WebAutomation-TDD/README.md)
 
 Installation
 ------------
@@ -23,25 +23,18 @@ Installation
 
 **Clone the Repository**
 
-`git clone https://github.com/insprintautomation/Automation-SampleProjects.git`
-
-References
--------------
-
-- Karate Labs WebSite: https://www.karatelabs.io
-- Karate Labs Github: https://github.com/karatelabs/karate
-- Petstore API Swagger: https://petstore.swagger.io
+`git clone https://github.com/insprintautomation/TestAutomationProjects.git`
 
 Support and Contact
 -------------------
 
-- **Email:** `http://slack.robotframework.org/>`
+- **Email:** `insprintautomation@gmail.com`
 
 
 Contributing
 ------------
 
-Interested to contribute to Sample Test Automation projects? Great! In that case it is a good
+Interested to contribute to Sample Test Automation projects?
 
 License and Trademark
 ---------------------

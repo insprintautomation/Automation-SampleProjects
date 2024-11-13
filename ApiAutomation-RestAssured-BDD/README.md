@@ -1,9 +1,9 @@
 API Automation RestAssured & BDD
 ===============
 
-This is a sample test automation project for automating in-sprint/functional/regression tests for the Sample **PetStore** API Application. The tests are built using **JAVA**, **RestAssured**, **Cucumber BDD**, **TestNG** and **Maven**.
-Framework utility methods are developed on top of RestAssured. 
-Sample test scripts are added using BDD and TestNG approaches.
+This test automation project is for automating in-sprint/functional/regression tests for  **PetStore** API Application using BDD and TDD. 
+The tests are built using **Gherkin**, **JAVA**, **RestAssured**, **Cucumber BDD**, **TestNG** and **Maven**.
+Framework utility methods are developed on top of RestAssured.
 Common steps required for API automation are automated as part of the framework, this enables code re-usability, faster script development, easy maintenance and apt for in-sprint automation.
 
 Project Structure
@@ -57,7 +57,7 @@ Installation
 **Clone the Repository**
 
 ```commandline
-git clone https://github.com/insprintautomation/Automation-SampleProjects.git
+git clone https://github.com/insprintautomation/TestAutomationProjects.git
 cd Automation-SampleProjects/ApiAutomation-RestAssured-BDD
 ```
 
@@ -149,7 +149,7 @@ public class DataGenerator {
 BDD Tests
 -------
 
-Below is the sample test scripts for testing inventory and user endpoints in `Petstore` API using `Cucumber BDD` approach.
+Below is the test scripts for testing inventory and user endpoints in `Petstore` API using `Cucumber BDD` approach.
 
 **Feature File:**
 
@@ -366,9 +366,9 @@ public class TestNGRunner extends AbstractTestNGCucumberTests {
 
 TestNG Tests
 -----
-**Approach1:** Using RestAssured methods
+**Approach 1:** Using RestAssured methods
 
-Below is the sample scripts for testing add user endpoint `v2/user` for petstore API using RestAssured and TestNG.
+Below is the scripts for testing add user endpoint `v2/user` for petstore API using RestAssured and TestNG.
 ```java
 package com.petstore.api.automation.restassured.testng;
 
@@ -404,7 +404,7 @@ public class UserTest extends BaseSetup {
 ```
 
 **Approach 2:** Using ApiUtil methods
-Below is the sample scripts for testing add inventory endpoint `v2/store/inventory` for petstore API using `ApiUtil.java`. ApiUtil has wrapper methods for API operations which uses RestAssured.
+Below is the scripts for testing add inventory endpoint `v2/store/inventory` for petstore API using `ApiUtil.java`. ApiUtil has wrapper methods for API operations which uses RestAssured.
 ```java
 package com.petstore.api.automation.restassured.testng;
 
@@ -588,5 +588,5 @@ References
 -------------
 
 - RestAssured WebSite: https://rest-assured.io/
-- Cucumber Github: https://cucumber.io/docs/cucumber/
+- Cucumber: https://cucumber.io/docs/cucumber/
 - Petstore API Swagger: https://petstore.swagger.io

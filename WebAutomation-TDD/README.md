@@ -12,25 +12,23 @@ WebAutomation-TDD
         | pom.xml
         ├── src
         │   ├── main
-        │   │   ├── java
-        │   │   │   ├── com.web.automation.pageobjects
-        │   │   │   │   ├── CartPage.java
-        │   │   │   │   ├── CheckoutPage.java
-        │   │   │   │   ├── InventoryPage.java
-        │   │   │   │   └── LoginPage.java
-        │   │   │   └── com.web.automation.utils
-        │   │   │       ├── dataprovider
-        │   │   │       │   ├── JsonDataProvider.java
-        │   │   │       │   └── model
-        │   │   │       │       ├── CustomerInfo.java
-        │   │   │       │       └── TestData.json
-        │   │   │       ├── CommonUtil.java
-        │   │   │       ├── Constants.java
-        │   │   │       ├── CSVDataUtil.java
-        │   │   │       ├── DriverManager.java
-        │   │   │       └── WebUtil.java
-        │   │   └── resources
-        │   │       └── extent.properties
+        │   │   └── java
+        │   │       ├── com.web.automation.pageobjects
+        │   │       │   ├── CartPage.java
+        │   │       │   ├── CheckoutPage.java
+        │   │       │   ├── InventoryPage.java
+        │   │       │   └── LoginPage.java
+        │   │       └── com.web.automation.utils
+        │   │           ├── dataprovider
+        │   │           │   ├── JsonDataProvider.java
+        │   │           │   └── model
+        │   │           │       ├── CustomerInfo.java
+        │   │           │       └── TestData.json
+        │   │           ├── CommonUtil.java
+        │   │           ├── Constants.java
+        │   │           ├── CSVDataUtil.java
+        │   │           ├── DriverManager.java
+        │   │           └── WebUtil.java
         │   └── test
         │       ├── java
         │       │   └── com.saucedemo.tdd.automation
@@ -76,15 +74,6 @@ Make sure `Maven` is installed on your machine. Then, run the following command 
 
 Configuration
 -----
-Create a `src/main/resources/extent.properties` file to configure the extent report.
-```properties
-basefolder.name= reports/extent/ExtentReport
-basefolder.datetimepattern = MMM-d_HH-mm-ss
-extent.reporter.spark.start=true
-extent.reporter.spark.out=index.html
-screenshot.dir=reports/screenshots
-screenshot.rel.path=../screenshots/
-```
 
 Create a `src/test/resources/config.properties` file to configure the browser, device lab, environment, timeouts and other configs.
 ```properties
@@ -625,7 +614,7 @@ To execute all tests, run maven command ``mvn clean test``.
 
 To filter specific group of `TestNG` tests and execute, run maven command ``mvn clean test -Dgroups=order -Denvironment=test``.
 
-To run `TestNG` tests using parallel threads, run maven command ``mvn clean test -Dthreadcount=5``.
+To run `TestNG` tests using parallel threads, run maven command ``mvn clean test -Dparallel=methods -Dthreadcount=5 -Ddataproviderthreadcount=2``.
 
 **Run/Debug configurations in IntelliJ:**
 
