@@ -15,6 +15,7 @@ public class InventoryPage extends WebUtil {
 
     private By cartLink = By.cssSelector("a.shopping_cart_link");
 
+    // dynamic locator - creates locator at runtime based on product name provided
     private WebElement addToCartBtn(String productName) {
         return getDriver().findElement(By.name("add-to-cart-%s".formatted(productName)));
     }
@@ -24,6 +25,7 @@ public class InventoryPage extends WebUtil {
         assertEquals(getText(title), expectedTitle);
     }
 
+    @Step("Add '{products}' to Cart")
     public void addProductsToCart(List<String> products) {
         for (String product : products) {
             addToCartBtn(product.trim()).click();

@@ -48,5 +48,4 @@ public class CheckoutPage extends WebUtil {
         assertEquals(getText(completeDesc), "Your order has been dispatched, and will arrive just as fast as the pony can get there!");
         getScreenshot();
     }
-
 }

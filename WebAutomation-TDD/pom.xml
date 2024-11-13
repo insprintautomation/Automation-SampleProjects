@@ -12,8 +12,8 @@
     <artifactId>WebAutomation-TDD</artifactId>
 
     <properties>
-        <maven.compiler.source>20</maven.compiler.source>
-        <maven.compiler.target>20</maven.compiler.target>
+        <maven.compiler.source>18</maven.compiler.source>
+        <maven.compiler.target>18</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <allure.version>2.25.0</allure.version>
         <aspectj.version>1.9.21</aspectj.version>
@@ -106,15 +106,15 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.1.2</version>
                 <configuration>
-                    <testFailureIgnore>false</testFailureIgnore>
                     <systemPropertyVariables>
-                        <allure.results.directory>
-                            ${project.basedir}/reports/allure-results
-                        </allure.results.directory>
+                        <allure.results.directory>${project.basedir}/reports/allure-results</allure.results.directory>
                     </systemPropertyVariables>
                     <argLine>
-                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                        -javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar
                     </argLine>
+                    <includes>
+                        <include>**/com.saucedemo.tdd.automation.test/*.java</include>
+                    </includes>
                 </configuration>
                 <dependencies>
                     <dependency>

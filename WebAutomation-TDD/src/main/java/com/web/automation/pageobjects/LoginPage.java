@@ -17,6 +17,7 @@ public class LoginPage extends WebUtil {
 
     private final By error = By.cssSelector("[data-test='error'");
 
+    // login using username and email provided
     @Step("Login as '{data.accountType}' user")
     public void login(TestData data) {
         typeValue(userNameBox, data.getUserName());
@@ -24,6 +25,7 @@ public class LoginPage extends WebUtil {
         click(loginBtn);
     }
 
+    // validates error message displayed in login page for invalid login
     @Step("Check login page shows error '{expectedError}'")
     public void checkError(String expectedError) {
         String actualError = getText(error);

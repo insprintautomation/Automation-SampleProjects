@@ -1,9 +1,9 @@
 Web Automation Cucumber BDD
 ===============
 
-This test automation project for automating in-sprint/functional/regression tests for the **saucedemo** Web Application. 
+This test automation project is for automating in-sprint/functional/regression tests for the **saucedemo** Web Application using **Behavioural Driven Development(BDD)** framework. 
 The tests are built using **JAVA**, **Selenium WebDriver 4**, **Cucumber BDD**, **TestNG** and **Maven**.
-Framework uses Page Object Model using Page Factory.
+Framework uses **Page Object Model(POM)** using Page Factory.
 
 Project Structure
 ------------
@@ -281,7 +281,7 @@ public class PageObjects {
 BDD Tests
 -------
 
-Below is the test scripts for testing login and product order features in `Saucedemo` web application using `Cucumber BDD` approach.
+Below is the test scripts for testing `login` and `product order` features in `Saucedemo` web application using `Cucumber BDD` approach.
 
 **Feature File:**
 
@@ -587,6 +587,7 @@ Reports
 After the test execution, allure, cucumber and extent reports will be generated in `reports` directory.
 
 **Allure Report:**
+
 Start the allure report using command line `allure serve` from the `reports` directory.
 
 ![allure-overview.png](images/allure-overview.png)
@@ -600,11 +601,13 @@ Start the allure report using command line `allure serve` from the `reports` dir
 ![allure-packages.png](images/allure-packages.png)
 
 **Cucumber Report:**
+
 Open `reports/cucumber/cucumber.html` in browser.
 
 ![cucumber-report.png](images/cucumber-report.png)
 
 **Extent Report:**
+
 Open `reports/extent/index.html` in browser.
 
 ![extent-overview..png](images/extent-overview.png)
@@ -614,7 +617,9 @@ Open `reports/extent/index.html` in browser.
 ![extent-category.png](images/extent-category.png)
 
 **Screenshot:**
+
 See screenshot images in reports/screenshots
+
 ![screenshot.png](images/screenshot.png)
 
 References
