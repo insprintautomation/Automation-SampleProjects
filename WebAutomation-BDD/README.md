@@ -50,7 +50,7 @@ WebAutomation-BDD
         │   ├── allure-results
         │   ├── cucumber
         │   ├── extent
-        │   └── logs
+        │   └── screenshots
         └── README.md
 ```
 
@@ -135,7 +135,6 @@ For the `Saucedemo` web application, below page object classes are created using
 **Login Page:**
 ```java
 public class LoginPage {
-
     // page factory
     @FindBy(id = "user-name")
     private WebElement userNameBox;
@@ -168,7 +167,6 @@ public class LoginPage {
 **Inventory Page:**
 ```java
 public class InventoryPage {
-
     @FindBy(css = ".title")
     private WebElement title;
 
@@ -197,7 +195,6 @@ public class InventoryPage {
 **Cart Page:**
 ```java
 public class CartPage {
-
     @FindBy(id = "checkout")
     private WebElement checkoutBtn;
 
@@ -210,7 +207,6 @@ public class CartPage {
 **Checkout Page:**
 ```java
 public class CheckoutPage {
-
     @FindBy(id = "first-name")
     private WebElement firstName;
 
@@ -264,7 +260,6 @@ public class CheckoutPage {
 PageFactory.initElements(driver, this) initializes the elements annotated with @FindBy based on the provided driver instance. It binds the elements to the corresponding web elements on the page.
 ```java
 public class PageObjects {
-
     public PageObjects() {
         initializePageObjects();
     }
@@ -294,7 +289,6 @@ Below is the test scripts for testing login and product order features in `Sauce
 ```gherkin
 @login @regression @smoke
 Feature: Login
-
   As a customer, I should be able to successfully login with valid credentials, and see error for invalid credentials.
 
   Background:
@@ -333,7 +327,6 @@ Feature: Login
 ```gherkin
 @order @regression @smoke
 Feature: Product Order
-
   As a customer, I should be able to browse products, add products to cart and place order successfully.
 
   Background:
@@ -577,17 +570,17 @@ Create run/debug configurations in IntelliJ using menu navigation `Run -> Edit C
 
 Using `Maven` configuration, Select `Maven` from the run/debug configurations window. Name the configuration, enter command `clean test -Dcucumber.filter.tags="@order" -Denvironment=test` in Run input box, select `ApiAutomation-RestAssured-BDD` module and Apply. 
 
-![img.png](img.png)
+![web-bdd-mvn.png](images/web-bdd-mvn.png)
 
 Using `TestNG` configuration, Select `TestNG` from the run/debug configurations window. Name the configuration, select `ApiAutomation-RestAssured-BDD` module and `TestNGRunner.java` class and Apply.
 
-![img_1.png](img_1.png)
+![web-bdd-testng.png](images/web-bdd-testng.png)
 
 To Run/Debug configuration, select the saved configuration and click Play or Debug button.
 
 **Run Console Output:**
 
-![img_2.png](img_2.png)
+![ConsoleOutput.png](images/ConsoleOutput.png)
 
 Reports
 -------------
@@ -596,33 +589,33 @@ After the test execution, allure, cucumber and extent reports will be generated 
 **Allure Report:**
 Start the allure report using command line `allure serve` from the `reports` directory.
 
-![img_3.png](img_3.png)
+![allure-overview.png](images/allure-overview.png)
 
-![img_4.png](img_4.png)
+![allure-suites.png](images/allure-suites.png)
 
-![img_5.png](img_5.png)
+![allure-graphs.png](images/allure-graphs.png)
 
-![img_6.png](img_6.png)
+![allure-behaviours.png](images/allure-behaviours.png)
 
-![img_7.png](img_7.png)
+![allure-packages.png](images/allure-packages.png)
 
 **Cucumber Report:**
 Open `reports/cucumber/cucumber.html` in browser.
 
-![img_8.png](img_8.png)
+![cucumber-report.png](images/cucumber-report.png)
 
 **Extent Report:**
 Open `reports/extent/index.html` in browser.
 
-![img_9.png](img_9.png)
+![extent-overview..png](images/extent-overview.png)
 
-![img_10.png](img_10.png)
+![extent-tests.png](images/extent-tests.png)
 
-![img_11.png](img_11.png)
+![extent-category.png](images/extent-category.png)
 
-**Logs:**
-
-![logs.png](images/logs.png)
+**Screenshot:**
+See screenshot images in reports/screenshots
+![screenshot.png](images/screenshot.png)
 
 References
 -------------
